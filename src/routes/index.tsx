@@ -1,7 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Phone, Mail, MapPin, Building2, FileText, ShieldCheck } from "lucide-react";
-import logoFull from "@/assets/logo-full.jpg.asset.json";
-import logoIcon from "@/assets/logo-icon.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -39,7 +37,7 @@ function Index() {
       <header className="sticky top-0 z-20 border-b border-border bg-background/90 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-3">
           <a href="#" aria-label="Tamburrini, home" className="flex items-center gap-3">
-            <img src={logoIcon.url} alt="" className="h-10 w-10 mix-blend-multiply" />
+            <img src={`${import.meta.env.BASE_URL}android-chrome-192x192.png`} alt="" className="h-10 w-10 rounded-md object-contain" />
             <span className="font-display text-2xl tracking-wide">TAMBURRINI</span>
           </a>
           <nav aria-label="Principale" className="hidden gap-8 text-sm font-medium md:flex">
@@ -162,7 +160,10 @@ function Index() {
 
       <footer className="border-t border-border py-10">
         <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-5 md:flex-row">
-          <img src={logoFull.url} alt="Tamburrini – Amministrazione e gestione condomini" className="h-14 w-auto mix-blend-multiply" />
+          <div className="flex items-center gap-3">
+            <img src={`${import.meta.env.BASE_URL}android-chrome-192x192.png`} alt="" className="h-12 w-12 rounded-md object-contain" />
+            <span className="font-display text-xl tracking-wide">TAMBURRINI</span>
+          </div>
           <p className="text-sm text-muted-foreground">© Tamburrini Antonio · P.IVA 10325751211 · Vico Acitillo 160, 80127 Napoli</p>
         </div>
       </footer>
