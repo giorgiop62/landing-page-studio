@@ -113,10 +113,26 @@ function Index() {
           <div className="mx-auto grid max-w-6xl gap-10 px-5 md:grid-cols-2">
             <div>
               <h2 className="font-display text-4xl uppercase md:text-5xl">Lo studio</h2>
-              <p className="mt-6 text-lg opacity-80">
-                Titolare: <strong className="opacity-100">Antonio Tamburrini</strong>. Attività avviata il 1° luglio 2023.
+              <p className="mt-6 text-lg font-medium leading-relaxed">
+                Il vostro condominio è molto più di un edificio: è la vostra casa e merita una gestione serena, attenta e presente nel tempo.
               </p>
-              <p className="mt-4"><span className="rounded-md border border-dashed border-primary px-2 py-0.5 text-sm">[Presentazione e storia dello studio da inserire]</span></p>
+              <div className="mt-5 space-y-4 text-base leading-relaxed opacity-80">
+                <p>
+                  La formazione da Dottore Commercialista è alla base di una gestione contabile rigorosa e trasparente. Ho scelto di dedicarmi in via esclusiva all’amministrazione condominiale, per garantire una presenza costante, attenzione quotidiana e un rapporto diretto con ogni condomino.
+                </p>
+                <p>
+                  Seguo personalmente ogni stabile e collaboro con maestranze qualificate, per intervenire tempestivamente quando serve e tenere sotto controllo le scadenze. Il mio obiettivo è semplificarvi la vita: la documentazione è ordinata, digitalizzata e sempre a vostra disposizione.
+                </p>
+                <p>
+                  Credo in una comunicazione chiara e continua. Su richiesta, posso attivare un indirizzo email e una linea telefonica dedicati al vostro condominio. In caso di difficoltà legate alla gestione precedente, metto a disposizione la mia specializzazione nel risanamento e nella ricostruzione delle contabilità pregresse.
+                </p>
+                <p>
+                  La cura del vostro condominio è sostenuta da un aggiornamento professionale continuo e certificato e dalla copertura di una polizza di responsabilità civile professionale.
+                </p>
+              </div>
+              <p className="mt-6 text-sm opacity-70">
+                Antonio Tamburrini · Attività avviata il 1° luglio 2023
+              </p>
             </div>
             <dl className="grid grid-cols-1 gap-4 sm:grid-cols-2">
               {[
