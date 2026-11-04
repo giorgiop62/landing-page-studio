@@ -4,7 +4,9 @@ import react from "@vitejs/plugin-react";
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  base: process.env.GITHUB_ACTIONS ? "/landing-page-studio/" : "/",
+  // GitHub Pages is connected to the studio's custom domain, which serves at /
+  // rather than under the repository path.
+  base: "/",
   preview: { host: "127.0.0.1" },
   plugins: [
     tanstackStart({
